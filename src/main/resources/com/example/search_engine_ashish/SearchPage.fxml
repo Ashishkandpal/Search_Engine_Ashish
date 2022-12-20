@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="com.example.search_engine_ashish.MainClass" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="58.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Engine" wrappingWidth="155.43798828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.32271468144044324" centerY="0.4857482185273159" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.35199999809265137" green="0.49851828813552856" blue="0.6399999856948853" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1476510067114094">
+                     <color>
+                        <Color red="0.35160818696022034" green="0.5234527587890625" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4508609473705292" green="0.2724171578884125" blue="0.6842105388641357" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <TextField fx:id="text_field" layoutX="58.0" layoutY="87.0" prefHeight="32.0" prefWidth="297.0" />
+      <Button fx:id="search_button" onAction="#SearchButtonClick" layoutX="377.0" layoutY="90.0" mnemonicParsing="false" text="Search" />
+      <Button fx:id="history_button" onAction="#HistoryButtonClick" layoutX="470.0" layoutY="90.0" mnemonicParsing="false" text="History" />
+      <ScrollPane layoutX="58.0" layoutY="137.0" prefHeight="228.0" prefWidth="465.0">
+         <content>
+            <TextArea fx:id="text_area" prefHeight="225.0" prefWidth="463.0" text="&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
